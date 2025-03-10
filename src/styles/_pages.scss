@@ -1,0 +1,267 @@
+@import './colors.scss';
+@import './fonts.scss';
+@import './helpers.scss';
+
+.dp-page {
+    // page class layouts the entire page with column direction
+    @include displayFlex(column nowrap, center, center);
+    gap: 50px;
+    width: 100%;
+    height: 100%;
+    .dp-hero-layout
+    {
+        @include displayFlex(column nowrap, flex-start, flex-start);
+        gap: 50px;
+        position: relative;
+        width: 100%;
+        padding: 70px 20px;
+
+        .intro-text
+        {
+            gap: 10px;
+            .title
+            {}
+            .subtitle
+            {}
+            .btn-color
+            {
+                @include hoverPointer();
+                @include buttonBorder($color-secondary, $color-light, $color-secondary);
+                width: 160px;
+            }
+            .btn-border
+            {
+                @include hoverPointer();
+                @include buttonBorder(transparent, $color-dark, $color-dark);
+                width: 160px;
+            }
+        }
+
+        .img-container
+        {
+            @include displayFlex(column wrap, center, center);
+            height: 400px;
+            width: 100%;
+            border-radius: 40px;
+            overflow: hidden;
+            .img
+            {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        @media (min-width: 500px) {
+            @include displayFlex(row nowrap, flex-start, flex-start);
+        }
+    }
+    .dp-cards-layout
+    {
+        @include displayFlex(column wrap, center, flex-start);
+        gap: 30px;
+        padding: 70px 20px;
+        .text-container
+        {
+            @include displayFlex(column wrap, flex-start, flex-start);
+            gap: 20px;
+            max-width: 940px;
+            .btn
+            {
+                @include hoverPointer();
+                @include button($color-dark, $color-light);
+                width: 110%;
+            }
+        }
+        .card-container
+        {
+            @include displayFlex(row wrap, center, stretch);
+            gap: 20px;
+            .card
+            {
+                @include displayFlex(row wrap, center, stretch);
+                gap: 20px;
+                // padding: 20px;
+                background-color: white;
+                .img-container
+                {
+                    width: 250px;
+                    height: 250px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    flex-shrink: 0;
+                    .img
+                    {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .text-container
+                {
+                    .subtitle
+                    {
+                        // margin-bottom: 10px;
+                    }
+                    .description
+                    {
+                        text-align: center;
+                    }
+                }
+            }
+            @media (min-width: 610px) and (max-width: 980px)
+            {
+                .card
+                {
+                    @include displayFlex(row nowrap, center, stretch);
+                }
+            }
+            @media (min-width: 980px)
+            {
+                justify-content: flex-start;
+                .card
+                {
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    max-width: 300px;
+                    // max-width: 460px;
+                    .text-container
+                    {
+                        .subtitle
+                        {
+                            margin-bottom: 10px;
+                        }
+                        .description
+                        {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            @media (min-width: 1240px)
+            {
+                .card
+                {
+                    max-width: 360px;
+                }
+            }
+            @media (min-width: 1420px)
+            {
+                .card
+                {
+                    max-width: 440px;
+                }
+            }
+        }
+        .icon {
+            .card
+            {
+                @include displayFlex(row nowrap, flex-start, flex-start);
+                .img-container
+                {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 0;
+                }
+                .text-container
+                {
+                    padding: 0;
+                }
+            }
+        }
+    }
+    .dp-pricelist
+    {
+        @include displayFlex(column wrap, space-around, flex-start);
+        gap: 50px;
+        padding: 70px 20px;
+        width: 100%;
+        .text-container
+        {
+            @include displayFlex(column wrap, flex-start, flex-start);
+            gap: 20px;
+            max-width: 940px;
+        }
+        .cards-container {
+            @include displayFlex(row wrap, space-around, flex-start);
+            gap: 30px;
+            width: 90%;
+            .card
+            {
+                @include displayFlex(row wrap, flex-start, flex-start);
+                width: 600px;
+                gap: 20px;
+                .img {
+                    width: 320px;
+                    height: auto;
+                    object-fit: cover;
+                    border-radius: 20px;
+                }
+                .text-container {
+                    width: 240px;
+                    .item
+                    {
+                        @include displayFlex(row wrap, space-between, flex-start);
+                    }
+                }
+            }
+        }
+    }
+    .dp-basic-text
+    {
+        @include displayFlex(column wrap, space-around, flex-start);
+        padding: 70px 20px;
+        width: 100%;
+        gap: 30px;
+        .text-container
+        {
+            @include displayFlex(column wrap, flex-start, flex-start);
+            gap: 20px;
+            max-width: 940px;
+            .btn
+            {
+                @include hoverPointer();
+                @include button($color-dark, $color-light);
+                width: 110%;
+            }
+        }
+    }
+    .dp-contact-layout
+    {
+        @include displayFlex(column wrap, center, flex-start);
+        gap: 30px;
+        padding: 70px 20px;
+        width: 100%;
+        .text-container
+        {
+            @include displayFlex(column wrap, flex-start, flex-start);
+            gap: 20px;
+            max-width: 940px;
+        }
+        .contact-container
+        {
+            @include displayFlex(column-reverse wrap, center, flex-start);
+            gap: 30px;
+            width: 100%;
+            .maps-wrapper-container
+            {
+                width: 100%;
+                height: 350px;
+                iframe {
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    border-radius: 20px;
+                }
+            }
+            .contact-info-container
+            {
+                @include displayFlex(column wrap, flex-start, flex-start);
+                gap: 15px;
+            }
+            @media (min-width: 560px)
+                {
+                    @include displayFlex(row nowrap, center, flex-start);
+                }
+        }
+    }
+}
