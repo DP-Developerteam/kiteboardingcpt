@@ -1,7 +1,6 @@
 @import '../App.scss';
 
-//Styles for Header, and Modal
-
+// Styles for Header
 .header
 {
     @include displayFlex(row nowrap, space-between, center);
@@ -58,8 +57,7 @@
     }
 }
 
-
-// BookingModal.scss
+// Styles for Booking modal
 .booking-modal-overlay
 {
     position: fixed;
@@ -76,10 +74,12 @@
     .booking-modal
     {
         background-color: white;
-        padding: 40px;
+        padding: 20px;
         border-radius: 8px;
         width: 100%;
         max-width: 700px;
+        max-height: 80dvh;
+        overflow-y: auto;
         .booking-modal-header
         {
             display: flex;
@@ -114,6 +114,9 @@
             {
                 font-weight: bold;
             }
+        }
+        @media (min-width: 550px) {
+            padding: 40px;
         }
     }
 }

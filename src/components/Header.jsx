@@ -1,9 +1,8 @@
 // Import styles and libraries
 import './__components.scss';
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
 //Import images/icons
-import Logo from '../assets/img/logo.jpg';
+import Logo from '../assets/img/logo.webp';
 import MenuIcon from '../assets/img/menu-icon.svg';
 import MenuOpenIcon from '../assets/img/menu-open-icon.svg';
 
@@ -21,7 +20,7 @@ function Header() {
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
-            behavior: 'smooth', // Optional: smooth scrolling
+            behavior: 'smooth',
         });
     };
 
