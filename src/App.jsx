@@ -51,7 +51,7 @@ const App = () => {
                             <p className='paragraph whatsapp'>🔥 **Instant Action:** Shoot us a WhatsApp message!<br/><a href='https://wa.me/27765916069' target='_blank' rel='noreferrer' className='link'>Tap here to connect!</a></p>
                         </div>
                         <div className='img-container'>
-                            <img className='img' src={HeroImg} alt=''/>
+                            <img className='img' src={HeroImg} alt='table mountain view from Bloubergstrand' width='400' height='400'/>
                         </div>
                     </section>
                     <hr/>
@@ -63,7 +63,7 @@ const App = () => {
                         <div className='card-container'>
                             <div className='card'>
                                 <div className='img-container'>
-                                    <img className='img' src={BruceImg} alt=''/>
+                                    <img className='img' src={BruceImg} alt='Bruce Gonlag' width='250' height='250' loading="lazy"/>
                                 </div>
                                 <div className='text-container'>
                                     <p className='subtitle'>Bruce Gonlag</p>
@@ -72,7 +72,7 @@ const App = () => {
                             </div>
                             <div className='card'>
                                 <div className='img-container'>
-                                    <img className='img' src={GarronImg} alt=''/>
+                                    <img className='img' src={GarronImg} alt='Garron Gonsalves' width='250' height='250' loading="lazy"/>
                                 </div>
                                 <div className='text-container'>
                                     <p className='subtitle'>Garron Gonsalves</p>
@@ -81,7 +81,7 @@ const App = () => {
                             </div>
                             <div className='card'>
                                 <div className='img-container'>
-                                    <img className='img' src={HydenImg} alt=''/>
+                                    <img className='img' src={HydenImg} alt='Hyden Jonas' width='250' height='250' loading="lazy"/>
                                 </div>
                                 <div className='text-container'>
                                     <p className='subtitle'>Hyden Jonas</p>
@@ -100,7 +100,7 @@ const App = () => {
                         <div className='card-container icon'>
                             <div className='card'>
                                 <div className='img-container'>
-                                    <img className='img' src={KitesurfIcon} alt='Kite gear icon'/>
+                                    <img className='img' src={KitesurfIcon} alt='Kite gear icon' width='100' height='100' loading="lazy"/>
                                 </div>
                                 <div className='text-container'>
                                     <p className='subtitle'>Kite gear</p>
@@ -109,7 +109,7 @@ const App = () => {
                             </div>
                             <div className='card'>
                                 <div className='img-container'>
-                                    <img className='img' src={WetsuitIcon} alt='Wetsuit icon'/>
+                                    <img className='img' src={WetsuitIcon} alt='Wetsuit icon' width='100' height='100' loading="lazy"/>
                                 </div>
                                 <div className='text-container'>
                                     <p className='subtitle'>Wetsuit</p>
@@ -118,7 +118,7 @@ const App = () => {
                             </div>
                             <div className='card'>
                                 <div className='img-container'>
-                                    <img className='img' src={HelmetIcon} alt='Helmet icon'/>
+                                    <img className='img' src={HelmetIcon} alt='Helmet icon' width='100' height='100' loading="lazy"/>
                                 </div>
                                 <div className='text-container'>
                                     <p className='subtitle'>Helmet</p>
@@ -140,7 +140,7 @@ const App = () => {
                         </div>
                         <div className='cards-container'>
                             <div className='card'>
-                                <img className='img' src={PrivateImg} alt=''/>
+                                <img className='img' src={PrivateImg} alt='private kite surf lessons' width='320' height='320' loading='lazy'/>
                                 <div className='text-container'>
                                     <p className='subtitle'>Private lesson</p>
                                     <p className='paragraph'>1 instructor/student</p>
@@ -159,7 +159,7 @@ const App = () => {
                                 </div>
                             </div>
                             <div className='card'>
-                                <img className='img' src={SemiprivateImg} alt=''/>
+                                <img className='img' src={SemiprivateImg} alt='semiprivate kite surf lessons' width='320' height='320' loading='lazy'/>
                                 <div className='text-container'>
                                     <p className='subtitle'>Semi-Private lesson</p>
                                     <p className='paragraph'>1 instructor max 2 students</p>
