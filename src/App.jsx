@@ -165,12 +165,10 @@ const App = () => {
                                     <p className='paragraph'>1 instructor max 2 students</p>
                                     <br/>
                                     <div className='item'>
-                                        <p className='paragraph'>3 HOURS SESSION - </p>
-                                        <p className='paragraph'>R2250</p>
+                                        <p className='paragraph'>3 HOURS SESSION - R2250</p>
                                     </div>
                                     <div className='item'>
-                                        <p className='paragraph'>6 HOURS SESSION - </p>
-                                        <p className='paragraph'>R4200</p>
+                                        <p className='paragraph'>6 HOURS SESSION - R4200</p>
                                     </div>
                                     <br/>
                                     <br/>
