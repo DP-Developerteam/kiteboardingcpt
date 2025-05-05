@@ -1,6 +1,6 @@
 # Cape Town Kiteboarding School Website
 
-This project is a responsive website built with React for a kiteboarding school in Cape Town, South Africa. It features information about the school, lessons, rentals, instructors, pricing, and contact details.
+This project is a responsive website built with ReactJS for a kiteboarding school in Cape Town, South Africa. It features information about the school, lessons, rentals, instructors, pricing, and contact details.
 
 ## Features
 
